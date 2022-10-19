@@ -1,11 +1,11 @@
 import React from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 const Hero = () => (
-  <Jumbotron>
+  <div class="container-fluid bg-light text-dark p-5">
     <p>Pague suas contas pelo nosso APP</p>
     <Button variant="outline-light">Abra sua conta</Button>
-  </Jumbotron>
+  </div>
 );
 
 export default Hero;
