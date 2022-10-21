@@ -1,9 +1,29 @@
 import React from "react";
-import {  } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
+// import { FontAwesomeIcon } from ;
 import './Credit.scss';
 
 const Credit = () => (
-  <h1>Teste</h1>
+  <Container>
+    <Col>
+      <Row>
+        <h2 className="mt-4">Cartão de crétido</h2>
+      </Row>    
+      <Row className="d-inline">
+        <p className="d-inline">Crédito Pessoal</p>
+        <p className="d-inline">Pagamentos Online</p>
+        {/* <FontAwesomeIcon icon={"fa-solid fa-credit-card"} /> */}
+      </Row>
+      <br /> <br />
+      <Row className="d-inline my-5">
+        <p className="d-inline">APP</p>
+        <p className="d-inline">Carteira Digital</p>
+      </Row>
+    </Col>
+    <Col>
+      <img src="../assets/credit-card.png" alt="img" />
+    </Col>
+  </Container>
 );
 
 export default Credit;
