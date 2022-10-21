@@ -13,7 +13,7 @@ const Navigation = () => (
         className="d-inline-block align-top"
         alt="Magbank logo" />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle aria-controls="basic-navbar-nav fab" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="#cartao">Cartão</Nav.Link>
