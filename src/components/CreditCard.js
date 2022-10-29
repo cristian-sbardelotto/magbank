@@ -1,7 +1,8 @@
 import React from "react";
-import { Col, Row, Container } from "react-bootstrap";
-// import { FontAwesomeIcon } from ;
-import './Credit.scss';
+import { Col, Row, Container, Image } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCreditCard, faMobile, faShoppingCart, faWallet} from '';
+import './CreditCard.scss';
 
 const Credit = () => (
   <Container>
