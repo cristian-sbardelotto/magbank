@@ -5,7 +5,7 @@ import { faMobileAlt, faMobile, faGlobe, faShieldAlt } from '@fortawesome/free-s
 import './Institutional.scss';
 
 const Institutional = () => (
-  <section className="institutional text-light px-5">
+  <section className="institutional text-light py-5">
     <Container>
       <Row>
         <Col xs={12} lg={5} />
