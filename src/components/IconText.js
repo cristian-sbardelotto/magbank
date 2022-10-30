@@ -10,7 +10,7 @@ const IconText = ({
   color = '#000',
   children
 }) => (
-  <Row>
+  <Row className={`d-flex align-items-center ${className}`}>
     <Col xs={size} className="d-flex justify-content-center">
       <FontAwesomeIcon icon={icon} size={`${size}x`} color={color} className='' />
     </Col>

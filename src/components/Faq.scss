@@ -1,0 +1,17 @@
+@import '../variables';
+
+.faq {
+  background-color: $color-faq-background;
+
+  .accordion-item,
+  .accordion-header,
+  .accordion {
+    background: unset;
+  }
+
+  .accordion-header {
+    background-color: $color-faq-accordion-header;
+  }
+}
+
+
