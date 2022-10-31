@@ -1,0 +1,17 @@
+@import '../variables';
+
+.footer {
+  border-bottom: 0.2rem solid $color-secondary;
+}
+
+.footer__logo {
+  @media screen and (max-width: 992px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.footer__apps {
+  @media screen and (max-width: 992px) {
+    margin-bottom: 3rem;
+  }
+}
