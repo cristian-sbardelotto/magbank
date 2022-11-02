@@ -1,8 +1,10 @@
-.hero {
+div.hero {
   background-image: url('../assets/hero.jpg');
   background-size: cover;
   background-position: center top;
+  border-radius: 0;
 }
-.btn-mod {
-  text-align: left;
+
+.hero__logo {
+  margin-left: 20vw;
 }
