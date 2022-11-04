@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 import { Container, Col, Row, Button } from 'react-bootstrap';
-import IconText from "./IconText";
+import IconText from './IconText';
 import { faMobileAlt, faMobile, faGlobe, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import './Institutional.scss';
 
 const Institutional = ({handleCreateAcc}) => (
-  <section className="institutional text-light py-5">
+  <section className='institutional text-light py-5'>
     <Container>
       <Row>
         <Col xs={12} lg={5} />
         <Col xs={12} lg={7}>
-          <h2 className="institutional-title my-5">Já nascemos digital</h2>
+          <h2 className='institutional-title my-5' id='quemsomos'>Já nascemos digital</h2>
           <p className="mb-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie quis nisi quis suscipit. In convallis mauris eu ipsum mattis eleifend. Aliquam pretium venenatis aliquet. Praesent fringilla posuere eros id pharetra. Nulla suscipit nisl et ultrices aliquam. Ut in gravida neque, sit amet blandit neque. Duis euismod diam eros, a suscipit odio ultrices vel. Integer interdum erat nec metus convallis hendrerit.
           </p>

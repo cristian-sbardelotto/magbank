@@ -18,20 +18,16 @@ const Faq = () => {
   const [ index, setIndex ] = useState(1);
 
   const handleClick = key => {
-    console.log(key);
     setIndex(key);
   }
 
-  useEffect(() => {
-    console.log(index);
-
-  }, [index]);
+  useEffect(() => {}, [index]);
 
   return (
     <section className='faq text-light'>
       <Container className='py-5'>
         <Row className='text-center'>
-          <h2 className='faq-title my-5'>Dúvidas frequentes</h2>
+          <h2 className='faq-title my-5' id='faq'>Dúvidas frequentes</h2>
         </Row>
         {/* Linha para o Mobile */}
         <Row className='d-flex align-items-center justify-items-center'>

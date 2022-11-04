@@ -7,15 +7,13 @@ import logo from '../assets/logo.png'
 const Navigation = ({ handleCreateAcc }) => (
   <Navbar variant="dark" expand="lg">
     <Container>
-      <Navbar.Brand href="#home">
         <Link to='/'>
         <img 
         src={logo}
         height="30" 
-        className="d-inline-block align-top"
+        className="d-inline-block align-top me-5"
         alt="Magbank logo" />
         </Link>
-      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav fab" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
