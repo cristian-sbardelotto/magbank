@@ -7,29 +7,24 @@ import './App.scss';
 
 import Home from './views/Home';
 import Login from './views/Login';
+import Dashboard from './views/Dashboard';
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-      <Router>
-        <Navbar handleCreateAcc={() => setShowModal(true)} />
+    <Router>
+      <Navbar handleCreateAcc={() => setShowModal(true)} />
 
-        <Routes>
-          <Route path='/' element={<Home handleClick={() => setShowModal(true)} />} />
-        </Routes>
+      <Routes>
+        <Route path='/' element={<Home handleClick={() => setShowModal(true)} />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+      </Routes>
 
-        <Routes>
-          <Route path='/login' element={<Login />} />
-        </Routes>
-
-        {/* <Routes>
-          <Route path='/dashboard' element={<Dashboard />}
-        </Routes> */}
-
-        <Footer />
-        <AccountModal show={showModal} handleClose={() => setShowModal(false)}/>
-      </Router>
+      <Footer />
+      <AccountModal show={showModal} handleClose={() => setShowModal(false)}/>
+    </Router>
 );
 };
 

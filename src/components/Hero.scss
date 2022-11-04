@@ -3,8 +3,9 @@ div.hero {
   background-size: cover;
   background-position: center top;
   border-radius: 0;
-}
 
-.hero__logo {
-  margin-left: 20vw;
+  &__row {
+    margin-left: 20vw;
+    width: fit-content;
+  }
 }
