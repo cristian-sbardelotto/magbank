@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Button, ButtonGroup, NavDropdown, Dropdown } from "react-bootstrap";
 import './Navbar.scss'
 import logo from '../assets/logo.png'
 
-const Navigation = () => (
+const Navigation = ({ handleCreateAcc }) => (
   <Navbar variant="dark" expand="lg">
     <Container>
-      <Navbar.Brand href="#home">
+        <Link to='/'>
         <img 
         src={logo}
         height="30" 
-        className="d-inline-block align-top"
+        className="d-inline-block align-top me-5"
         alt="Magbank logo" />
-      </Navbar.Brand>
+        </Link>
       <Navbar.Toggle aria-controls="basic-navbar-nav fab" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
@@ -23,12 +24,16 @@ const Navigation = () => (
         <ButtonGroup aria-label="Basic example">
           <Button variant="outline-light">
             <NavDropdown title="Acessar minha conta" id="basic-nav-dropdown">
-              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+              <Dropdown.Item>
+                <Link to='/login'>Pessoa Física</Link>
+              </Dropdown.Item>
+
+              <Dropdown.Item>
+                <Link to='/login'>Pessoa Jurídica</Link>
+              </Dropdown.Item>
             </NavDropdown>
           </Button>
-          <Button variant="outline-light">Abra sua conta</Button>
+          <Button variant="outline-light" onClick={handleCreateAcc}>Abra sua conta</Button>
         </ButtonGroup>
       </Navbar.Collapse>
     </Container>
