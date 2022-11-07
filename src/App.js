@@ -17,9 +17,9 @@ const App = () => {
       <Navbar handleCreateAcc={() => setShowModal(true)} />
 
       <Routes>
-        <Route path='/' element={<Home handleClick={() => setShowModal(true)} />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/dashboard/*' element={<Dashboard />} />
+        <Route path='/' element={<Home handleClick={() => setShowModal(true)} />} />
       </Routes>
 
       <Footer />
