@@ -8,6 +8,7 @@ import './Dashboard.scss';
 
 import AccountBalance from '../components/AccountBalance';
 import AccountPayments from '../components/AccountPayments';
+import AccountHistory from '../components/AccountHistory';
 
 const Dashboard = ({ className = false }) => {
   const [ activeLink, setActiveLink ] = useState(0);
@@ -32,7 +33,21 @@ const Dashboard = ({ className = false }) => {
       {date: '21/08', description: 'Imagine 123312132', value:'275,00'},
       {date: '20/08', description: 'NETFLIX 312312', value:'30,00'},
       {date: '15/08', description: 'Farmácia 12445415', value:'350,00'}
-  ]
+  ],
+    history: [
+      {date: '17/07', description: 'SAQUE 24H 012345', value: '200,00-', balance: ''},
+      {date: '17/07', description: 'SALDO DO DIA', value: '', balance: '2.7800,00'},
+      {date: '19/07', description: 'ESTACIONAMENTO 123234', value: '12,00-', balance: ''},
+      {date: '19/07', description: 'COMPRA INTERNET 123432', value: '450,00-', balance: ''},
+      {date: '19/07', description: 'SALDO DO DIA', value: '', balance: '2.318,00'},
+      {date: '21/07', description: 'SUPERMERCADO 2312332', value: '275,90-', balance: ''},
+      {date: '21/07', description: 'ESTACIONAMENTO 123234', value: '12,00-', balance: ''},
+      {date: '21/07', description: 'SHOPPING 123432', value: '180,00-', balance: ''},
+      {date: '21/07', description: 'SALDO DO DIA', value: '', balance: '1,851,00'},
+      {date: '22/07', description: 'SUPERMERCADO 2312332', value: '275,90-', balance: ''},
+      {date: '22/07', description: 'DEPÓSITO 123234', value: '1,000,00-', balance: ''},
+      {date: '22/07', description: 'SALDO DO DIA', value: '', balance: '2576,00'},
+    ]
 };
 
   return (
@@ -64,7 +79,7 @@ const Dashboard = ({ className = false }) => {
         </Col>
 
         <Routes>
-          <Route path='history' element={<h2>History</h2>} />
+          <Route path='history' element={<AccountHistory data={data} />} />
           <Route path='payments' element={<AccountPayments />} />
           <Route path='/' element={<AccountBalance data={data} />} />
         </Routes>
