@@ -2,7 +2,6 @@ import React from 'react';
 import { Col, Table, Tab, Tabs, Button } from 'react-bootstrap';
 
 const AccountBalance = ({ data }) => { 
-
   const { latestBalance, futureBalance } = data;
 
   return (

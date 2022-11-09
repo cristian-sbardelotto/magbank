@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,7 +7,7 @@ import { faUser, faCircle } from '@fortawesome/free-solid-svg-icons';
 import './Dashboard.scss';
 
 import AccountBalance from '../components/AccountBalance';
-import { useState } from "react";
+import AccountPayments from '../components/AccountPayments';
 
 const Dashboard = ({ className = false }) => {
   const [ activeLink, setActiveLink ] = useState(0);
@@ -64,7 +65,7 @@ const Dashboard = ({ className = false }) => {
 
         <Routes>
           <Route path='history' element={<h2>History</h2>} />
-          <Route path='payments' element={<h2>Pagamentos</h2>} />
+          <Route path='payments' element={<AccountPayments />} />
           <Route path='/' element={<AccountBalance data={data} />} />
         </Routes>
      </Row>
