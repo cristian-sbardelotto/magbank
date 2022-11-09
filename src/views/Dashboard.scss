@@ -1,7 +1,6 @@
 @import '../variables';
 
 .dashboard {
-
   @media screen and (min-width: 992px) {
     min-height: calc(100vh - 16.25rem);
   }
@@ -20,10 +19,22 @@
   &__button {
     color: $color-primary;
     text-decoration: none;
-    &:hover, &--active {
+    margin-bottom: 0.5rem;
+
+    &:hover,
+    &--active,
+    &--active:hover {
       color: #fff;
-      background-color: $color-primary;
       text-decoration: none;
+    }
+
+    &:hover {
+      background-color: #626262;
+    }
+
+    &--active,
+    &--active:hover {
+      background-color: $color-primary;
     }
   }
 

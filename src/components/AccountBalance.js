@@ -69,7 +69,7 @@ const AccountBalance = ({ data }) => {
         </Tabs>
       </Col>
     </>
-);
+  );
 };
 
 export default AccountBalance;
