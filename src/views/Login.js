@@ -34,7 +34,7 @@ const Login = ({ auth }) => {
                 <Form.Label className='lead mt-4'>Senha</Form.Label>
                 <Form.Control type="password" />
               </Form.Group>
-              <Button className='mt-3' variant="success" type="submit" onClick={handleSubmit}>
+              <Button className='mt-3' id='login__button' variant="success" type="submit" onClick={handleSubmit}>
                 Acessar Conta
               </Button>
             </Form>

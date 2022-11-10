@@ -10,7 +10,7 @@ import AccountBalance from '../components/AccountBalance';
 import AccountPayments from '../components/AccountPayments';
 import AccountHistory from '../components/AccountHistory';
 
-const Dashboard = ({ className = false }) => {
+const Dashboard = ({ className = false, name, account }) => {
   const [ activeLink, setActiveLink ] = useState(0);
 
   const links = [
@@ -18,7 +18,6 @@ const Dashboard = ({ className = false }) => {
     { text: 'Pagamentos', path: '/dashboard/payments' },
     { text: 'Extrato', path: '/dashboard/history' },
   ];
-
 
   const data = { 
     latestBalance: [
@@ -62,8 +61,8 @@ const Dashboard = ({ className = false }) => {
               </span>
             </Col>
             <Col xs={9}>
-              <h4>Cristian Sbardelotto</h4>
-              <p className='text-muted'>ag: 1234 c/: 4321-5</p>
+              <h4>{name}</h4>
+              <p className='text-muted'>{account}</p>
             </Col>
           </Row>
           <div className='d-grid gap-2'>
