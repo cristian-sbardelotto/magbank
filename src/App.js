@@ -11,13 +11,29 @@ import Dashboard from './views/Dashboard';
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
+  const [name, setName] = useState();
+  const [account, setAccount] = useState();
+  const isLogged = name && account;
+
+  const fakeAuth = {
+    login(name, account, cb) {
+      setName(name);
+      setAccount(account);
+      setTimeout(cb, 100);
+    },
+    logout(cb) {
+      setName();
+      setAccount();
+      setTimeout(cb, 100);
+    }
+  };
 
   return (
     <Router>
       <Navbar handleCreateAcc={() => setShowModal(true)} />
 
       <Routes>
-        <Route path='/login' element={<Login />} />
+        <Route path='/login' element={<Login auth={fakeAuth} />} />
         <Route path='/dashboard/*' element={<Dashboard /> } />
         <Route path='/' element={<Home handleClick={() => setShowModal(true)} />} />
       </Routes>
