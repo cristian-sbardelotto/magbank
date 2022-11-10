@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React from 'react';
 import Hero from '../components/Hero';
 import CreditCard from '../components/CreditCard';
 import CardList from '../components/CardList';
