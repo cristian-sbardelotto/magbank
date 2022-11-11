@@ -14,7 +14,7 @@ const Dashboard = ({ className = false, name, account }) => {
   const [ activeLink, setActiveLink ] = useState(0);
 
   const links = [
-    { text: 'Minha Conta', path: '/dashboard', exact: true },
+    { text: 'Minha Conta', path: '/dashboard'},
     { text: 'Pagamentos', path: '/dashboard/payments' },
     { text: 'Extrato', path: '/dashboard/history' },
   ];
@@ -66,8 +66,8 @@ const Dashboard = ({ className = false, name, account }) => {
             </Col>
           </Row>
           <div className='d-grid gap-2'>
-            {links.map(({ text, path, exact }, key) => (
-            <Link to={path} exact={exact ? exact : false} key={key}>
+            {links.map(({ text, path }, key) => (
+            <Link to={path} key={key}>
               <Button className={`dashboard__button text-start ${key === activeLink ? 'dashboard__button--active' : ''}`} variant='link' size='lg' 
               onClick={() => setActiveLink(key)}>
                 {text}

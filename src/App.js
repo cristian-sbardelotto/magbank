@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, redirect } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import AccountModal from './components/AccountModal';
@@ -9,13 +9,6 @@ import Home from './views/Home';
 import Login from './views/Login';
 import Dashboard from './views/Dashboard';
 
-const PrivateRoute = ({ children, logged = false, ...rest }) => (
-  <Routes>
-    <Route
-      {...rest}
-      render={() => (logged ? children : redirect('/login'))} />
-  </Routes>
-);
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
@@ -36,21 +29,26 @@ const App = () => {
     }
   };
 
+  const PrivateRoute = ({ Component, logged }) => {
+    return logged ? <Component name={name} account={account} /> : <Navigate to='/login' />;
+  };
+
   return (
     <Router>
-      <Navbar handleCreateAcc={() => setShowModal(true)} />
+      <Navbar handleCreateAcc={() => setShowModal(true)} logged={isLogged} auth={fakeAuth} />
 
       <Routes>
         <Route path='/login' element={<Login auth={fakeAuth} />} />
         <Route path='/' element={<Home handleClick={() => setShowModal(true)} />} />
+        <Route path='dashboard/*' element={<PrivateRoute Component={Dashboard} logged={isLogged} /> } />
       </Routes>
 
-        <PrivateRoute logged={isLogged} path='/dashboard/*' element={<Dashboard name={name} account={account} /> } />
+      {/*  <PrivateRoute logged={isLogged} path='/dashboard/*' element={<Dashboard name={name} account={account} /> } /> */}
 
       <Footer />
       <AccountModal show={showModal} handleClose={() => setShowModal(false)} auth={fakeAuth} />
     </Router>
-);
+  );
 };
 
 export default App;

@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Row, Col, Form, Button, Image } from 'react-bootstrap';
 import logo from '../assets/logo-login.png';
+
 import './Login.scss'
 
 const Login = ({ auth }) => {
-  const [name, setName] = useState();
-  const [account, setAccount] = useState();
+  const [name, setName] = useState('');
+  const [account, setAccount] = useState(null);
   const navigate = useNavigate();
 
   const handleSubmit = () => {
@@ -22,12 +23,12 @@ const Login = ({ auth }) => {
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label className='lead'>Nome Completo</Form.Label>
-                <Form.Control type="text" value={name} onChange={(e) => setName(e.currentTarget.value)} />
+                <Form.Control type="text" value={name || ''} onChange={(e) => setName(e.currentTarget.value)} />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label className='lead'>Número da Conta</Form.Label>
-                <Form.Control type="number" value={account} onChange={(e) => setAccount(e.currentTarget.value)} />
+                <Form.Control type="number" value={account || ''} onChange={(e) => setAccount(e.currentTarget.value)} />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">

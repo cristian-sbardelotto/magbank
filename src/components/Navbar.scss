@@ -3,4 +3,23 @@
 .navbar {
   background-color: $color-primary;
   border-bottom: 0.2rem solid $color-secondary;
+  
+  .dropdown-item a {
+    color: #212529;
+    text-decoration: none;
+  }
+ 
+  .dropdown-toggle.nav-link:hover {
+    color: #212529;
+  }
+
+  &__search-group {
+    width: 28rem;
+  }
 }
+
+.navbar-brand {
+  padding: 0.3125rem 0;
+  margin-right: 1rem; 
+}
+
