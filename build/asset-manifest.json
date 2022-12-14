@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.611769e1.css",
+    "main.js": "/static/js/main.cb45a6fe.js",
+    "static/js/787.f80ed9fd.chunk.js": "/static/js/787.f80ed9fd.chunk.js",
+    "static/media/logo__magic-pay.png": "/static/media/logo__magic-pay.f0bdafd8ecdb98f8448c.png",
+    "static/media/logo__magic-pay--mobile.png": "/static/media/logo__magic-pay--mobile.e9747515ed612228c4f9.png",
+    "static/media/institutional.jpg": "/static/media/institutional.6ca025a0e8deb95a79a6.jpg",
+    "static/media/hero.jpg": "/static/media/hero.839f2765daf38ce4207e.jpg",
+    "static/media/post-3.jpg": "/static/media/post-3.3aba93697b9eab66465e.jpg",
+    "static/media/credit-card.jpg": "/static/media/credit-card.121452e3ea869c251d6e.jpg",
+    "index.html": "/index.html",
+    "main.611769e1.css.map": "/static/css/main.611769e1.css.map",
+    "main.cb45a6fe.js.map": "/static/js/main.cb45a6fe.js.map",
+    "787.f80ed9fd.chunk.js.map": "/static/js/787.f80ed9fd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.611769e1.css",
+    "static/js/main.cb45a6fe.js"
+  ]
+}
