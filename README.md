@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+<h1 align="center"> Magbank </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+An Internet Banking site, that simulates purchases and money management, provided by Imagine School.
+</p>
 
-## Available Scripts
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+<p align="center">
+  <img alt="rocketpay" src=".github/project.png" width="100%">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>🖱️ Technologies</h2>
+<p>This project was made with the following technologies:</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ReactJS
+- React Router Dom
+- JavaScript
+- SCSS
+- Bootstrap
+- React Font Awesome
+- Git
+- Github
 
-### `npm test`
+<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖥️ Depoly
 
-### `npm run build`
+To check the deploy, click [this link](https://studion-eight.vercel.app).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📤 Installation
+<br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> <h3>Firstly, you need to <strong>clone the project</strong> on your machine:</h3>
+<br />
 
-### `npm run eject`
+<p align='center'><code>git clone https://github.com/cristian-sbardelotto/magbank</code></p>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> <h3>After that, open the project folder and <strong>install the dependencies:</strong></h3>
+<br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align='center'><code>npm i</code></p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align='center'><code>yarn</code></p>
 
-## Learn More
+> <h3>To <strong>run the project</strong> on your browser, use</h3>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align='center'><code>npm start</code></p>
+<p align='center'><code>yarn start</code></p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br/>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
+<br/>
 
-### Analyzing the Bundle Size
+<h2 align='center'>Enjoy this project!</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Developed with ❤️ by <strong>Cristian Sbardelotto</strong>
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cristian-k-sbardelotto/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/cristian-sbardelotto)
