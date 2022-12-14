@@ -12,7 +12,7 @@ An Internet Banking site, that simulates purchases and money management, provide
 <br>
 
 <p align="center">
-  <img alt="rocketpay" src=".github/project.png" width="100%">
+  <img alt="Magbank Print Screen" src="./src/assets/magbankScreenshot.png" width="100%">
 </p>
 
 <h2>🖱️ Technologies</h2>
@@ -29,11 +29,6 @@ An Internet Banking site, that simulates purchases and money management, provide
 
 <br />
 
-## 🖥️ Depoly
-
-To check the deploy, click [this link](https://studion-eight.vercel.app).
-
-<br />
 
 ## 📤 Installation
 <br />
