@@ -4,11 +4,6 @@
 An Internet Banking site, that simulates purchases and money management, provided by Imagine School.
 </p>
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-
 <br>
 
 <p align="center">
