@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Accordion, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Accordion } from 'react-bootstrap';
 import IconText from './IconText';
 import { faCreditCard, faWallet, faUserTie, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Faq.scss';
-import { icon } from '@fortawesome/fontawesome-svg-core';
 
 
 const Faq = () => {
